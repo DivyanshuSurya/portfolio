@@ -1,0 +1,866 @@
+
+/* Rest of the CSS remains the same */
+
+/* Import a cursive font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(120deg, #74C5D9, #F7E4AD, #F9AF53, #D8653F);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #333;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header and Navigation */
+header {
+    background-color: rgba(47, 40, 40, 0.9); /* Slightly transparent background */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive; /* Apply cursive font */
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-right ul li {
+    margin-left: 20px;
+}
+
+.nav-right ul li a {
+    color: #deeaf6; /* DodgerBlue links */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.nav-right ul li a:hover {
+    text-decoration: underline;
+    color: rgb(182, 116, 233);
+    font-size: 1.1rem;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+/* Resume Button */
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #6c63ff; /* Blue color */
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #afacfe; /* Darker blue on hover */
+    transform: translateY(-3px);
+}
+
+/* Cover Photo Section */
+.cover-photo {
+    background: url('https://pbs.twimg.com/profile_images/1707398013398974464/lu87Drbo_400x400.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cover-photo h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.cover-photo p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Links Styling */
+a {
+    color: #deeaf6; /* DodgerBlue links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(182, 116, 233);
+    font-size: 1.05rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .cover-photo {
+        padding: 60px 10px;
+    }
+
+    .cover-photo h1 {
+        font-size: 2.5rem;
+    }
+
+    .cover-photo p {
+        font-size: 1.2rem;
+    }
+}
+
+
+.about-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: #dfd1d1;
+    margin: 50px auto;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-picture-container {
+    flex: 1;
+    text-align: center;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    max-width: 200px;
+    border: 5px solid #6c63ff;
+}
+
+.about-text {
+    flex: 2;
+    margin-left: 30px;
+}
+
+.about-text h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.wave {
+    display: inline-block;
+    animation: wave-animation 2s infinite;
+}
+
+@keyframes wave-animation {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(20deg); }
+}
+
+.purple {
+    color: #6c63ff;
+}
+
+.animated-title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #6c63ff;
+    font-weight: bold;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin-right: 15px;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #6c63ff;
+}
+
+.resume-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #6c63ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #5753c9;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .profile-picture {
+        max-width: 150px;
+    }
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #100101;
+}
+
+.social-links a:hover {
+    color: #1e90ff; /* DodgerBlue on hover */
+}
+
+/* Section Headings */
+section h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1e90ff; /* DodgerBlue for section headings */
+}
+
+
+.experience-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.experience-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-icon {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.timeline-item:hover .timeline-icon {
+    color: #0056b3;
+}
+
+.timeline-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.timeline-content p {
+    font-size: 1em;
+    color: #666;
+    margin: 0;
+}
+
+.timeline-date {
+    font-size: 0.9em;
+    color: #999;
+    margin-top: 10px;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .experience-timeline {
+        padding-left: 0;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timeline-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+
+.projects-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.projects-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-screenshot {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#hobbies {
+    background-color: #ffffff;
+    padding: 50px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#hobbies h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.hobbies-list {
+    list-style: none;
+    padding: 0;
+}
+
+.hobbies-list li {
+    display: inline-block;
+    margin: 20px;
+    font-size: 1.2em;
+    color: #2c3e50;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hobbies-list li i {
+    font-size: 2em;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.hobbies-list li:hover {
+    transform: scale(1.1);
+    color: #3498db;
+}
+
+.hobbies-list li:hover i {
+    color: #2c3e50;
+}
+/* Skills Section */
+.skills-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.skills-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.skill-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+    font-size: 3em;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.skill-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skill-card p {
+    font-size: 1em;
+    color: #666;
+}
+.education-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.education-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.education-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-icon {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.timeline-item:hover .timeline-icon {
+    color: #0056b3;
+}
+
+.timeline-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.timeline-content p {
+    font-size: 1em;
+    color: #666;
+    margin: 0;
+}
+
+.timeline-date {
+    font-size: 0.9em;
+    color: #999;
+    margin-top: 10px;
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .education-timeline {
+        padding-left: 0;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .timeline-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+
+.achievements-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.achievements-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.achievement-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-icon {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.achievement-card:hover .achievement-icon {
+    color: #0056b3;
+}
+
+.achievement-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.achievement-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+@media screen and (max-width: 768px) {
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+#contact {
+    background-color: #ffffff;
+    padding: 50px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#contact h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+#contact p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.contact-info ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.contact-info ul li i {
+    font-size: 1.5em;
+    color: #3498db;
+    margin-right: 15px;
+}
+
+.contact-info ul li a {
+    font-size: 1.2em;
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info ul li a:hover {
+    color: #3498db;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.submit-btn {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+}
+.wave {
+    display: inline-block;
+    animation: wave 2s infinite;
+}
+
+/* Waving animation */
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); } 
+    100% { transform: rotate(0deg); }
+}
+@media (max-width: 1024px) {
+    /* Styles for tablets (optional) */
+  }
+  
+  @media (max-width: 768px) {
+    /* Styles for smaller screens */
+    .nav-right ul {
+      display: none;
+    }
+    .nav-toggle {
+      display: flex;
+    }
+    .about-container {
+      flex-direction: column;
+    }
+  }
+  @media (min-width: 768px) {
+    /* Styles for larger screens */
+    nav {
+      justify-content: space-around; /* Example: Centering on larger screens */
+    }
+    .about-container {
+      flex-direction: row; /* Example: Stacking elements horizontally on larger screens */
+    }
+  }
+  
+  /* The base styles will apply to all screen sizes by default */
+  nav {
+    display: flex; /* Example: Base flexbox for navigation */
+  }
+  
+  .about-container {
+    display: flex; /* Example: Base flexbox for about section */
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+.wave {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing if needed */
+}
+
+.purple {
+    color: #6c63ff; /* Customize this color as per your theme */
+}
+
+h1 + h1 {
+    margin-top: 10px; /* Adjust the space between the two lines */
+}
+/* CSS */
+.footer {
+    text-align: center;
+    padding: 25px;
+    
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
