@@ -1,4 +1,5 @@
-💼 Divyanshu Surya's Portfolio
+💼 Divyanshu Surya's Portfolio<img width="1223" alt="Screenshot 2024-09-02 at 7 43 07 PM" src="https://github.com/user-attachments/assets/102d076a-397f-4b09-8977-dd7be8303dc5">
+
 Welcome to my personal portfolio! This project showcases my journey as a passionate software engineer specializing in Artificial Intelligence and Machine Learning. Explore my skills, projects, and contributions that reflect my love for technology and continuous learning.
 
 🚀 About Me
