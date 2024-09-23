@@ -24,11 +24,11 @@ I'm currently pursuing a B.Tech in AI & ML at Brainware University, Kolkata. Wit
   
 ## 🖥️ Live Demo
 
-Check out the live version of my portfolio here: [Live Portfolio](https://github.com/DivyanshuSurya/portfolio.git)
+Check out the live version of my portfolio here: [Live Portfolio](https://divyanshusurya.github.io/portfolio/)
 
 ## 📝 Projects Featured
 
-- **[Portfolio Website](https://github.com/DivyanshuSurya/portfolio.git)**  
+- **[Portfolio Website](https://divyanshusurya.github.io/portfolio/)**  
   A detailed walkthrough of my personal brand and skills, featuring a sleek, user-friendly design.
   
 - **[Calculator App](https://github.com/DivyanshuSurya/calculator.git)**
